@@ -1,0 +1,172 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+:root {
+    position: relative;         
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    width: fit-content;
+    overflow-x: hidden;
+    box-sizing:border-box;
+    background-color: rgb(17, 17, 17);
+    
+
+}
+:root:before {
+    content: '';
+    background-image: url(../imges/Netflix\ bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    position: absolute;
+    background-attachment: fixed;
+    inset: 0;
+    opacity: 0.5;
+}
+
+.page-logo > img {
+    width: 10%;
+    isolation: isolate;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+form{
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+form::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    inset: 0;
+    opacity: 0.7;
+
+}
+
+form {
+    width: 450px;
+    padding: 1em 0;
+    border-radius: 10px;
+    margin: 0 auto;
+    color: white;
+    isolation: isolate;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5em;
+}
+
+
+h1 {
+    isolation: isolate;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 400;
+}
+
+input {
+    isolation: isolate;
+    position: relative;
+    text-align: left;
+}
+
+.SignInInput h1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    gap: 20px;
+}
+
+label > input {
+    padding: 1.2em 0;
+    width: 85%;
+    border: none;
+    color: black;
+    border-radius: 3px;
+}
+
+
+
+::placeholder {
+    position:initial;
+    left: 20px;
+    top: -15px;
+    width: 100%;
+    color: #a0a0a0;
+    text-align:initial;
+    padding: 1.5em 0;
+    background-color: #454545;
+    font-size: medium;
+}
+
+button {
+    padding: 1.2em 0;
+    width: 85%;
+    background-color: #fa0410;
+    margin-top: 20px;
+    color: white; 
+    text-align: center;
+    font-size: medium; 
+   
+}
+
+h2{
+    text-align:center;
+    color: #ffffff;
+    width: 85%;
+}
+
+.P2{
+    color:#f2f6f4;
+    text-align: center;
+    font-size: medium;
+    
+}
+
+
+.Signup{
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.Signup {
+    color: #b3b3b3;
+}
+
+.Signup a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Signup a:hover {
+    text-decoration: underline  ;
+}
+
+.captch {
+    width: 350px;
+    isolation: isolate;
+    font-size: 0.9rem;
+    position: relative;
+    top: -40px;
+    color: #8a8a8a;
+    margin-bottom: 100px;
+}
+
+.captch a {
+    text-decoration: none;
+    color: #0071eb;
+}
+
