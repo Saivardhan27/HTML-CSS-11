@@ -4,28 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <style>
+        body{
+            content: '';
+            background-image: url(../imges/Forms\ bg.webp);
+            background-position: center;
+            background-size: cover;
+            background-repeat: repeat;
+            position: absolute;
+            background-attachment: fixed; 
+            width: fit-content;
+        }
+    
+        .box-content{
+            color: rgb(42, 10, 252);
+            font-size: larger;
+        }
+
+        .content{
+            color:#000000;
+            font-size: larger;
+            
+        }
+
+        #button-content{
+            color:rgb(0, 0, 0);
+            background-color: rgb(245, 136, 78);
+            font-size: larger;
+        }
+       
+
+    </style>
 </head>
 <body>
-    <h1>FORMS</h1>
-    <form action="main.py">
-        <div>
-            <label for="name" id="name">Enter Name:</label>
-            <input type="text" placeholder="Enter your Name" name="Sai"/>
-        </div> <br>
-        <div>
-            <input type="email" placeholder="Enter your email" name=""/>
-        </div> <br>
-        <div>
-            <input type="password" placeholder="Enter your password" />
-        </div> <br>
-        <div>
-            <input type="number" placeholder="Enter your age" name="age" id="age"/>
-        </div> <br>
-        <div>
-            <label for="DOB">Enter Your Date of Birth</label>
-            <input type="date" name="un" id="x"/>
-        </div> <br>
-        <button>Submit</button>
+    <div class="BOX"><h1>Registration Form</h1>
+    <div action="main.py">
+        <div class="box-content">
+        <form>
+            <label>First Name:</label>
+            <input type="text" name="#" placeholder="Enter Your FirstName" mandatory/> <br> <br>
+            <label>Last Name:</label>
+            <input type="text" name="#" placeholder="Enter Your LastName"/> <br> <br>
+            <label>Email:</label>
+            <input type="email" name="#" placeholder="Enter Your Email" mandatory/> <br> <br>
+            <label>DOB:</label>
+            <input type="date" name="#" placeholder="Date Of Birth"/> <br> <br> 
+            <label>Password:</label>
+            <input type="password" name="#" placeholder="Password" maxlength="8"/> <br> <br> 
+            <label>Mobile Number:</label>
+            <input type="tel" name="#" placeholder="Mobile Number"/> <br> <br>
+            <label>Age:</label>
+            <input type="number" placeholder="enter Your age"> <br> <br> 
+            <label>Identification ID:</label>
+            <input type="tel" placeholder="Enter Identification Number">
+            <input type="file" placeholder="Choosefile"> <br> <br>
+            <p>Address:</p><textarea></textarea> <br>
+            <div class="content">
+            <label>Gender:</label>
+             Male<input type="radio" value="Male" name="Gender"/>
+             Female<input type="radio"  value="Female" name="Gender" /> <br> <br>
+             <label>Qualification:</label>
+             SSC<input type="checkbox" value="SSC" name="checkbox">
+             INTERMEDIATE<input type="checkbox" value="INTERMEDIATE" name="checkbox">
+             UNDER GRADUATION<input type="checkbox" value="UNDER GRADUATION" name="checkbox">
+             POST GRADUATION<input type="checkbox" value="POST GRADUATION" name="checkbox"> <br> <br>
+             <input type="submit" id="button-content" value="Register">
+             <input type="reset"  id="button-content">
+        </form>  
+        </div> 
+         </div>
+        </div>
     </form>
 </body>
 </html>
