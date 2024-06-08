@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+   <script>
+       var num1 = +prompt("Enter number1")
+       var num2 = +prompt("Enter number2")
+       var operation = prompt("Enter which operation to do(+/-/*/ /)")
+       switch(operation) {
+         case '+':
+            alert("Sum of two numbers:"+(num1+num2)) 
+            break;
+         case '-':
+            alert("Difference of two numbers:"+(num1-num2)) 
+            break;
+         case '*':
+            alert("Product of two numbers:"+(num1*num2)) 
+            break;
+         case '/':
+            alert("Division of two numbers:"+(num1/num2)) 
+            break;
+         default:
+            alert("Enter Valid Operation")   
+         }
+         
+   </script> 
+</body>
+</html>

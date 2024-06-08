@@ -7,7 +7,18 @@
 </head>
 <body>
     <script>
-        var abalance=27000
+        var balance=27000
+        var amount =prompt("Enter a amount to transfer")
+
+        if(amount<balance){
+            alert("before deduction balance:" +balance)
+            balance=balance-amount
+            alert("Deducted successfully")
+            alert("After deduction balance:" +balance)
+        }
+       else{
+        alert("your balance is:" +balance+ "Enter  amount less than your balance")
+       } 
     </script>
 </body>
 </html>
