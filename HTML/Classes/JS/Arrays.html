@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-types</title>
+</head>
+<body>
+    <script>
+        /*Arrays are used to store multiple values in a single variable.Array is a type of global object used to store data*/
+        var cricket=['bat','ball','wkt']
+        console.log(cricket)
+
+        /*1.PUSH()Array:Push method adds one more elements to the end of the array and returns the new length*/
+
+        var cricket=['Bat','Ball','Wkt']
+        cricket.push('Bail')
+        console.log(cricket) 
+        
+        /*2.POP()Array:Pop method used to remove the last element from the array and retuns that value to the user*/
+
+        var cricket=['Bat','Ball','Wkt','Bail']
+        console.log(cricket.pop())
+        console.log(cricket)
+
+        /*3.UNSHIFT()Array:Unshift method adds new element to the beginning of the array*/
+
+        var Heros=['Surya','RC','Karthy']
+        console.log(Heros)
+        Heros.unshift('NTR')
+        console.log(Heros)
+
+        /*4.SHIFT()Array:Shift method removes the zeroth index element or starting element and shift the values at consecutive indexes down*/ 
+
+        var games=['cricket','kabaddi','Badminton','volleyball']
+        console.log(games)
+        var games=games.shift()   
+        console.log("removed is:"+games)
+        
+        /*5.Indexof()Array: Indexof method will give u the position of the first occurence of a value in string.It will return -1 if the value is not found*/ 
+
+        var places = ['Hyd','Ban','Pune']
+        console.log(places)
+        console.log("index of Hyd is: "+places.indexOf("Ban"))
+
+        /*6.Slice()Array: Slice method returns the selected elements in an array as a new array.It does nit change original array*/ 
+
+        var friends=['Sree','sai','teja']
+        console.log(friends)
+        console.log(friends.slice(0,2))
+        </script>
+</body>
+</html>
